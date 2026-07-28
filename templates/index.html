@@ -1,1 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tiêu đề thẻ tab trên trình duyệt -->
+    <title>Invite bot Bypass Url#4562</title>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background: url('https://png.pngtree.com/background/20210712/original/pngtree-green-premium-banner-picture-image_1178923.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header Navbar */
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(8px);
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #00ffcc;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .menu-btn {
+            font-size: 28px;
+            cursor: pointer;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .menu-btn:hover {
+            color: #00ffcc;
+        }
+
+        /* Side Navigation Drawer */
+        .side-nav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 101;
+            top: 0;
+            right: 0;
+            background-color: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            overflow-x: hidden;
+            transition: 0.4s;
+            padding-top: 60px;
+            box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+        }
+
+        .side-nav a, .side-nav .nav-item {
+            padding: 15px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #cbd5e1;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .side-nav a:hover {
+            color: #00ffcc;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .side-nav .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 36px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            padding-left: 20px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown-content a {
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        /* Main Container */
+        .container {
+            margin-top: 120px;
+            margin-bottom: 50px;
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 255, 204, 0.2);
+            padding: 40px 30px;
+            border-radius: 20px;
+            max-width: 650px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Central Lightning Button */
+        .avatar-container {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 15px;
+        }
+
+        .avatar-btn {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #090d16;
+            border: 3px solid #00d2ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 55px;
+            color: #00d2ff;
+            text-decoration: none;
+            box-shadow: 0 0 25px rgba(0, 210, 255, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .avatar-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 40px rgba(0, 210, 255, 0.8);
+            color: #00ffcc;
+            border-color: #00ffcc;
+        }
+
+        .invite-text {
+            color: #22c55e;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            text-transform: lowercase;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 5px;
+            color: #ffffff;
+            font-family: 'Georgia', serif;
+        }
+
+        .bot-tag {
+            color: #94a3b8;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .bot-badge {
+            background: #5865F2;
+            color: #fff;
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            vertical-align: middle;
+            margin-left: 5px;
+            font-family: sans-serif;
+        }
+
+        .description {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #e2e8f0;
+            text-align: justify;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #00d2ff;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Bar -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-bolt"></i> Bypass Url<span class="bot-badge">APP</span>
+        </div>
+        <div class="menu-btn" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Side Menu -->
+    <div id="mySidenav" class="side-nav">
+        <span class="close-btn" onclick="closeNav()">&times;</span>
+        <a href="#"><i class="fa-solid fa-house"></i> Main</a>
+        
+        <!-- Credit Section -->
+        <div class="nav-item">
+            <i class="fa-solid fa-circle-info"></i> <strong>Credits</strong>
+            <div class="dropdown-content">
+                <a href="#">Advertising support: DINH KHOI</a>
+                <a href="#">The bot creator: Van Vui</a>
+            </div>
+        </div>
+
+        <!-- Discord Servers Section -->
+        <div class="nav-item">
+            <i class="fa-brands fa-discord"></i> <strong>Discord Servers</strong>
+            <div class="dropdown-content">
+                <a href="https://discord.gg/hHTPDUmhw" target="_blank">U.K Hub</a>
+                <a href="https://discord.gg/USM5w2H6Y" target="_blank">Bypass Url</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Box -->
+    <div class="container">
+        <!-- Nút tia chớp (nhấn vào sẽ Invite Bot) -->
+        <div class="avatar-container">
+            <a href="https://discord.com/oauth2/authorize?client_id=1529919082630221994&permissions=4513085063023680&integration_type=0&scope=bot" class="avatar-btn" target="_blank" title="Invite Bot">
+                <i class="fa-solid fa-bolt"></i>
+            </a>
+        </div>
+        
+        <div class="invite-text">click here to invite bot</div>
+
+        <!-- Tên Bot chuẩn theo hình ảnh -->
+        <h1>Bypass Url <span class="bot-badge">APP</span></h1>
+        <div class="bot-tag">Bypass Url#4562</div>
+
+        <!-- Giới thiệu bot -->
+        <div class="description">
+            Welcome to <strong>Bypass Url</strong>, your ultimate Discord solution for seamless link navigation. Powered by advanced automated integration, our high-reputation bot effortlessly bypasses over 90 different link shorteners—including Linkvertise—directly within your channels or DMs. Enjoy unprecedented quality, optimal convenience, and a smoother Discord experience today. Thank you for choosing our service!
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+  </html>
+              
