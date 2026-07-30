@@ -144,14 +144,14 @@
             height: 100%;
             border-radius: 50%;
             background: #111111;
-            border: 4px solid #007bff; /* Viền xanh dương */
+            border: 4px solid #007bff;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 55px;
             color: #ffffff;
             text-decoration: none;
-            box-shadow: 0 0 25px rgba(0, 123, 255, 0.6); /* Đổ bóng xanh dương */
+            box-shadow: 0 0 25px rgba(0, 123, 255, 0.6);
             transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
         }
 
@@ -179,7 +179,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
+            gap: 10px;
         }
 
         .bot-tag {
@@ -189,22 +189,25 @@
             font-weight: 500;
         }
 
-        /* Badge Bot Dấu Tích Discord */
-        .bot-badge {
-            background: #5865F2;
-            color: #fff;
+        /* HUY HIỆU ✓ APP CHUẨN DISCORD */
+        .discord-app-badge {
+            background-color: #5865F2;
+            color: #ffffff;
             font-size: 11px;
-            padding: 2px 6px;
+            font-weight: 700;
+            padding: 3px 6px;
             border-radius: 4px;
-            vertical-align: middle;
-            font-family: sans-serif;
             display: inline-flex;
             align-items: center;
-            gap: 3px;
-            font-weight: 600;
+            gap: 4px;
+            vertical-align: middle;
+            line-height: 1;
+            font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
         }
 
-        .bot-badge i {
+        .discord-app-badge i {
             font-size: 10px;
         }
 
@@ -216,7 +219,7 @@
             background: rgba(255, 255, 255, 0.04);
             padding: 20px;
             border-radius: 12px;
-            border-left: 4px solid #007bff; /* Viền trái xanh dương */
+            border-left: 4px solid #007bff;
             margin-top: 15px;
         }
     </style>
@@ -226,7 +229,8 @@
     <!-- Header Bar -->
     <header>
         <div class="logo">
-            <i class="fa-solid fa-bolt" style="color: #007bff;"></i> Bypass Url <span class="bot-badge"><i class="fa-solid fa-check"></i> BOT</span>
+            <i class="fa-solid fa-bolt" style="color: #007bff;"></i> Bypass Url 
+            <span class="discord-app-badge"><i class="fa-solid fa-check"></i> APP</span>
         </div>
         <div class="menu-btn" onclick="openNav()">
             <i class="fa-solid fa-bars"></i>
@@ -268,8 +272,8 @@
         
         <div class="invite-text">click here to invite bot</div>
 
-        <!-- Tên Bot chuẩn Discord kèm Dấu Tích -->
-        <h1>Bypass Url <span class="bot-badge"><i class="fa-solid fa-check"></i> BOT</span></h1>
+        <!-- Tên Bot kèm Huy hiệu ✓ APP chuẩn Discord gốc -->
+        <h1>Bypass Url <span class="discord-app-badge"><i class="fa-solid fa-check"></i> APP</span></h1>
         <div class="bot-tag">Bypass Url#4562</div>
 
         <!-- Đoạn giới thiệu Bot -->
@@ -288,5 +292,5 @@
         }
     </script>
 </body>
-            </html>
-            
+    </html>
+
