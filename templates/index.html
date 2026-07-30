@@ -51,7 +51,7 @@
         .logo {
             font-size: 20px;
             font-weight: bold;
-            color: #e0e0e0;
+            color: #ffffff;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -65,7 +65,7 @@
         }
 
         .menu-btn:hover {
-            color: #aaaaaa;
+            color: #007bff;
         }
 
         /* Side Navigation Drawer */
@@ -131,7 +131,7 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
         }
 
-        /* Central Lightning Button - Bạc & Xám */
+        /* Nút tia chớp (Avatar) - VIỀN XANH DƯƠNG */
         .avatar-container {
             position: relative;
             width: 130px;
@@ -144,22 +144,22 @@
             height: 100%;
             border-radius: 50%;
             background: #111111;
-            border: 3px solid #888888;
+            border: 4px solid #007bff; /* Viền xanh dương */
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 55px;
-            color: #e0e0e0;
+            color: #ffffff;
             text-decoration: none;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 25px rgba(0, 123, 255, 0.6); /* Đổ bóng xanh dương */
             transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
         }
 
         .avatar-btn:hover {
             transform: scale(1.08);
-            box-shadow: 0 0 35px rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 40px rgba(0, 123, 255, 0.9);
             color: #ffffff;
-            border-color: #ffffff;
+            border-color: #00d2ff;
         }
 
         .invite-text {
@@ -176,6 +176,10 @@
             margin-bottom: 5px;
             color: #ffffff;
             font-family: 'Georgia', serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
         }
 
         .bot-tag {
@@ -185,15 +189,23 @@
             font-weight: 500;
         }
 
+        /* Badge Bot Dấu Tích Discord */
         .bot-badge {
             background: #5865F2;
             color: #fff;
-            font-size: 12px;
+            font-size: 11px;
             padding: 2px 6px;
             border-radius: 4px;
             vertical-align: middle;
-            margin-left: 5px;
             font-family: sans-serif;
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            font-weight: 600;
+        }
+
+        .bot-badge i {
+            font-size: 10px;
         }
 
         .description {
@@ -204,7 +216,7 @@
             background: rgba(255, 255, 255, 0.04);
             padding: 20px;
             border-radius: 12px;
-            border-left: 4px solid #888888;
+            border-left: 4px solid #007bff; /* Viền trái xanh dương */
             margin-top: 15px;
         }
     </style>
@@ -214,7 +226,7 @@
     <!-- Header Bar -->
     <header>
         <div class="logo">
-            <i class="fa-solid fa-bolt"></i> Bypass Url<span class="bot-badge">APP</span>
+            <i class="fa-solid fa-bolt" style="color: #007bff;"></i> Bypass Url <span class="bot-badge"><i class="fa-solid fa-check"></i> BOT</span>
         </div>
         <div class="menu-btn" onclick="openNav()">
             <i class="fa-solid fa-bars"></i>
@@ -247,7 +259,7 @@
 
     <!-- Main Content Box -->
     <div class="container">
-        <!-- Nút tia chớp (nhấn vào để Invite Bot) -->
+        <!-- Nút tia chớp (Viền Xanh Dương) -->
         <div class="avatar-container">
             <a href="https://discord.com/oauth2/authorize?client_id=1529919082630221994&permissions=4513085063023680&integration_type=0&scope=bot" class="avatar-btn" target="_blank" title="Invite Bot">
                 <i class="fa-solid fa-bolt"></i>
@@ -256,8 +268,8 @@
         
         <div class="invite-text">click here to invite bot</div>
 
-        <!-- Tên Bot chuẩn Discord -->
-        <h1>Bypass Url <span class="bot-badge">APP</span></h1>
+        <!-- Tên Bot chuẩn Discord kèm Dấu Tích -->
+        <h1>Bypass Url <span class="bot-badge"><i class="fa-solid fa-check"></i> BOT</span></h1>
         <div class="bot-tag">Bypass Url#4562</div>
 
         <!-- Đoạn giới thiệu Bot -->
@@ -276,5 +288,5 @@
         }
     </script>
 </body>
-    </html>
-    
+            </html>
+            
